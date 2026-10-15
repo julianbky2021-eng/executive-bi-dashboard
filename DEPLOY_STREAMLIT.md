@@ -15,7 +15,7 @@ Streamlit akan menampilkan alamat lokal, biasanya `http://localhost:8501`.
 ## Hosting gratis di Streamlit Community Cloud
 
 1. Buat atau masuk ke akun GitHub, lalu buat repository baru. Untuk data contoh ini, repository publik paling sederhana.
-2. Unggah file `streamlit_app.py`, `requirements.txt`, `latihan1.js`, dan folder `.streamlit` beserta `config.toml` ke root repository. Jangan pilih `app.py` Flask sebagai entrypoint.
+2. Pastikan repository berisi `streamlit_app.py`, `requirements.txt`, `latihan1.js`, `convert_data.py`, `latihan1.csv` (sumber data latihan), dan folder `.streamlit` beserta `config.toml`. Jangan pilih `app.py` Flask sebagai entrypoint.
 3. Masuk ke [share.streamlit.io](https://share.streamlit.io/) dan hubungkan akun GitHub.
 4. Pilih **Create app**, lalu pilih repository, branch (umumnya `main`), dan file utama `streamlit_app.py`.
 5. Tekan **Deploy**. Setelah proses build selesai, Streamlit memberikan alamat publik berakhiran `streamlit.app`.
@@ -25,7 +25,7 @@ Jika repository ingin dikirim lewat Git dari PowerShell, buat repository GitHub 
 
 ```powershell
 git init
-git add .gitignore README.md streamlit_app.py requirements.txt latihan1.js convert_data.py DEPLOY_STREAMLIT.md .streamlit/config.toml
+git add .gitignore README.md streamlit_app.py requirements.txt latihan1.js latihan1.csv convert_data.py DEPLOY_STREAMLIT.md .streamlit/config.toml
 git commit -m "Add Streamlit BI dashboard"
 git branch -M main
 git remote add origin https://github.com/USERNAME/NAMA-REPO.git
